@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Annalena Streichert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <script src="https://kit.fontawesome.com/7a4de436ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" ype="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Epilogue&family=Manrope:wght@500&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <!-- home -->
+    <header class="home container" role="banner">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-light navbar-expand-lg py-4" id="nav-desktop" role="navigation">
+            <a class="navbar-brand" href="index.html" id="logo-container">
+                <img src="images/logo.png" id="logo" alt="Annalena Logo">
+                <span id="logo-text">Annalena Streichert</span>
+            </a>
+            <div id="navbar-content" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" onclick="scroll_to_section('.home')">Home</li>
+                    <li class="nav-item" onclick="scroll_to_section('.projects')">Projects</li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top py-4" id="nav-mobile">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand" href="index.html" id="logo-container">
+                <img src="images/logo.png" id="logo" alt="Annalena Logo">
+                <span id="logo-text">Annalena Streichert</span>
+            </a>
+            <button class="navbar-toggler toggler-example" id="burger-menu" type="button" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-controls="navbarSupportedContent1"
+                aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars fa-1x"></i></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li onclick="scroll_to_section('.home')">Home</li>
+                    <li onclick="scroll_to_section('.projects')">Projects</li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <!-- introduction -->
+
+            <div class="col-xs-12 col-md-6 pl-2">
+                <h1 class="col-12 mb-3">Hi there! I'm <span>Annalena</span></h1>
+                <p class="col-12">I'm a final year MSc student in Human-Computer-Interaction @ LMU Munich.</p>
+                <div class="col-6 col-md-6">
+                    <ul class="icons" id="iconsTop">
+                        <li><a href="https://www.linkedin.com/in/annalena-streichert/"><i class="fa fa-linkedin"
+                                    id="linkedin-top"></i></a>
+                        </li>
+                        <li><a href="mailto:annalenastreichert@gmail.com"><i class="fa fa-envelope"
+                                    id="envelope-top"></i></a></li>
+                    </ul>
+                </div>
+                <a href="resume.pdf" rel="noopener"><button class="col-6 ml-3" id="resumeBtn"><b>Resume</b></button></a>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <i class="fa fa-angle-up" id="fa-up"></i>
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <!-- projects section -->
+        <section class="projects">
+            <div class="row mt-5 pl-2" id="projects" name="projects">
+                <h2 class="col-12 mb-3">My projects</h2>
+                <p class="col-xs-12 col-md-8 col-lg-6">Here are some of my projects!</p>
+            </div>
+            <!-- projects -->
+            <div class="row my-3">
+                <a class="col-xs-12 mb-3 mb-md-0 col-md-6 px-4 project" href="escape.html" target="_self" rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-escape',true);hideText('text-escape',true)"
+                            onmouseleave="showImage('card-escape',false);hideText('text-escape',false)">
+                            <img src="images/coding-escape-room3.png" class="img-card" id="card-escape"
+                                title="VR Coding Escape Room" alt="VR Coding Escape Room">
+                            <div class="cards-text" id="text-escape">
+                                <h2 id="h2-cards">VR Coding Escape Room</h2>
+                                <i class="fa-brands fa-unity" id="project-icon"></i>
+                                <strong class="vr">VR</strong>
+                                <i class="material-symbols-outlined" id="icon-controller">sports_esports</i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="col-xs-12 col-md-6 px-4 project" href="funformula.html" target="_self" rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-funformula',true);hideText('text-funformula',true)"
+                            onmouseleave="showImage('card-funformula',false);hideText('text-funformula',false)">
+                            <img src="images/fun-formula.png" class="img-card" id="card-funformula"
+                                title="In-car Social VR App" alt="In-car Social VR App">
+                            <div class="cards-text" id="text-funformula">
+                                <h2 id="h2-cards">In-car Social VR App</h2>
+                                <i class="fa-brands fa-unity" id="project-icon"></i>
+                                <strong class="vr">VR</strong>
+                                <i class="fa-solid fa-car" id="project-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row my-3">
+                <a class="col-xs-12 mb-3 mb-md-0 col-md-6 px-4 project" href="privacy.html" target="_self" rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-privacy',true);hideText('text-privacy',true)"
+                            onmouseleave="showImage('card-privacy',false);hideText('text-privacy',false)">
+                            <img src="images/privacy.png" class="img-card" id="card-privacy"
+                                title="AR IoT Privacy App" alt="AR IoT Privacy App">
+                            <div class="cards-text" id="text-privacy">
+                                <h2 id="h2-cards">AR IoT Privacy App</h2>
+                                <i class="fa-brands fa-unity" id="project-icon"></i>
+                                <i class="material-symbols-outlined">view_in_ar</i>
+                                <i class="fa-brands fa-apple" id="project-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="col-xs-12 col-md-6 px-4 project" href="emoji.html" target="_self" rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-emoji',true);hideText('text-emoji',true)"
+                            onmouseleave="showImage('card-emoji',false);hideText('text-emoji',false)">
+                            <img src="images/emoji2.png" class="img-card" id="card-emoji"
+                                title="EmojiMe Emotion Detection" alt="EmojiMe Emotion Detection">
+                            <div class="cards-text" id="text-emoji">
+                                <h2 id="h2-cards">EmojiMe<br>Emotion Detection</h2>
+                                <i class="fa-brands fa-python" id="project-icon"></i>
+                                <strong class="vr">ML</strong>
+                                <i class="fa-brands fa-android" id="project-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row my-3">
+                <a class="col-xs-12 mb-3 mb-md-0 col-md-6 px-4 project" href="alexa-wardrobe.html" target="_self"
+                    rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-alexa',true);hideText('text-alexa',true)"
+                            onmouseleave="showImage('card-alexa',false);hideText('text-alexa',false)">
+                            <img src="images/alexa.png" class="img-card" id="card-alexa"
+                                title="Alexa Wardrobe" alt="Alexa Wardrobe">
+                            <div class="cards-text" id="text-alexa">
+                                <h2 id="h2-cards">Alexa Wardrobe</h2>
+                                <i class="fa-brands fa-python" id="project-icon"></i>
+                                <i class="fa-regular fa-microphone" id="project-icon"></i>
+                                <i class="fa-solid fa-database" id="project-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="col-xs-12 col-md-6 px-4 project" href="covid-dashboard.html" target="_self" rel="noopener">
+                    <div class="row h-100">
+                        <div class="img-fluid" id="card"
+                            onmouseover="showImage('card-covid',true);hideText('text-covid',true)"
+                            onmouseleave="showImage('card-covid',false);hideText('text-covid',false)">
+                            <img src="images/co2-1.png" class="img-card" id="card-covid"
+                                title="COVID-19 Emissions Visualization" alt="COVID-19 Emissions Visualization">
+                            <div class="cards-text" id="text-covid">
+                                <h2 id="h2-cards">COVID-19 CO<sub>2</sub> Emissions Visualization</h2>
+                                <i class="fa-solid fa-code" id="project-icon"></i>
+                                <i class="fa-solid fa-chart-line" id="project-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <hr>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons footer">
+                <li><a href="https://www.linkedin.com/in/annalena-streichert/"><i class="fa fa-linkedin"
+                            id="icon-footer"></i></a></li>
+                <li><a href="mailto:annalenastreichert@gmail.com"><i class="fa fa-envelope" id="icon-footer"></i></a>
+                </li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Annalena Streichert</li>
+            </ul>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

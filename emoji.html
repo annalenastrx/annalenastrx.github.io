@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EmojiMe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <script src="https://kit.fontawesome.com/7a4de436ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" ype="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Epilogue&family=Manrope:wght@500&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- home -->
+    <header class="container project-header" role="banner">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-light navbar-expand-lg py-4" id="nav-desktop" role="navigation">
+            <a class="navbar-brand" href="index.html" id="logo-container">
+                <img src="images/logo.png" id="logo" alt="Annalena Logo">
+                <span id="logo-text">Annalena Streichert</span>
+            </a>
+            <div id="navbar-content" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top py-4" id="nav-mobile">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand" href="index.html" id="logo-container">
+                <img src="images/logo.png" id="logo" alt="Annalena Logo">
+                <span id="logo-text">Annalena Streichert</span>
+            </a>
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-controls="navbarSupportedContent1"
+                aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars fa-1x"></i></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li onclick="scroll_to_section('.home')">Home</li>
+                    <li onclick="scroll_to_section('.projects')">Projects</li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <!-- introduction -->
+            <div class="col-xs-12 col-md-12 pl-2">
+                <h3 class="d-flex justify-content-center">EmojiMe - Emotion Detection</h3>
+                <h4 class="d-flex justify-content-center" id="techText">Python &#8226 Machine Learning &#8226 Android
+                </h4>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-angle-up" id="fa-up"></i>
+        </button>
+        <!-- background image -->
+    </header>
+    <main class="container funformula">
+        <div class="project">
+            <div class="row align-items-center">
+                <!-- introduction -->
+                <div class="col-md-2 mx-auto">
+                </div>
+                <div class="col-12 col-md-8 pl-2" id="carousel-container">
+                    <div class="align-items-center">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-interval="0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/emoji2.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto">
+                </div>
+            </div>
+            <div class="description">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-md-12">
+                        <h5>OVERVIEW</h5>
+                        <p id="description-text">
+                            Our project goal was to simplify the emoji selection process so that users do not have to
+                            search through all emojis anymore to find a suitable one. Therefore, we created an app that
+                            uses a neural network to detect facial expressions of users and transforms them into an
+                            emoji. We built and trained a neural network for six different emotions using a combination
+                            of
+                            multiple available emotion data sets and images that we scraped from the
+                            google image search to increase accuracy. We also tried to include more than six emojis but
+                            it was not possible to achieve a satisfactory accuracy with publicly available data sets.
+                            <br><br>
+                            We then included our model in an android app and implemented the UI to enable users to take
+                            a picture and generate an emoji with it.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-xs-4 col-md-4">
+                        <h5>MY ROLE</h5>
+                        <p id="details">
+                            Group project with three fellow students. I was responsible for data set creation and neural
+                            network training.
+                        </p>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <h5>TECHNOLOGIES</h5>
+                        <p id="details">
+                            Python &#8226 Keras &#8226 Tensorflow &#8226 Android
+                        </p>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <h5>TIMELINE</h5>
+                        <p id="details">
+                            May 2021 - July 2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons footer">
+                <li><a href="https://www.linkedin.com/in/annalena-streichert/"><i class="fa fa-linkedin"
+                            id="icon-footer"></i></a></li>
+                <li><a href="mailto:annalenastreichert@gmail.com"><i class="fa fa-envelope" id="icon-footer"></i></a>
+                </li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Annalena Streichert</li>
+            </ul>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
